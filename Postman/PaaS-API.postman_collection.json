@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "840ecc26-db71-4ff9-a2f0-a671fa9545a3",
+		"name": "PaaS-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Kubernetes/GetPods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/Kubernetes/GetPods/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"Kubernetes",
+						"GetPods",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('GetDataFromCluster/', views.get_data_from_cluster),
+    path('GetPods/', views.get_data_from_cluster),
 ]
