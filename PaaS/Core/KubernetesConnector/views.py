@@ -65,3 +65,15 @@ def get_all_namespaces(self):
     result = kube_one.client.list_namespace(watch=False)
     all_ns = [item.metadata.name for item in result.items]
     return JsonResponse({"Namespaces": all_ns})
+
+
+def get_all_pods_detailed(self):
+    result = kube_one.client.list_pod_for_all_namespaces(watch=False)
+    pod = {}
+    all_pods = []
+    for i in result.items:
+        pod["Name"] = i.metadata.name
+        pod["IP"] = i.status.pod_ip
+        pod["Namespace"] = i.metadata.namespace
+        all_pods.append(pod.copy())
+    return JsonResponse({"RunningPods": all_pods})

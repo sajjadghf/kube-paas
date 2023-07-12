@@ -30,6 +30,108 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Kubernetes/GetPodsDetailed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/Kubernetes/GetPodsDetailed/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"Kubernetes",
+						"GetPodsDetailed",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kubernetes/GetServices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/Kubernetes/GetServices/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"Kubernetes",
+						"GetServices",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kubernetes/GetNodes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/Kubernetes/GetNodes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"Kubernetes",
+						"GetNodes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kubernetes/GetNamespaces",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/Kubernetes/GetNamespaces",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"Kubernetes",
+						"GetNamespaces"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
