@@ -53,3 +53,15 @@ def get_all_services(self):
     result = kube_one.client.list_service_for_all_namespaces(watch=False)
     all_services = [item.metadata.name for item in result.items]
     return JsonResponse({"Services": all_services})
+
+
+def get_all_nodes(self):
+    result = kube_one.client.list_node(watch=False)
+    all_nodes = [item.metadata.name for item in result.items]
+    return JsonResponse({"Nodes": all_nodes})
+
+
+def get_all_namespaces(self):
+    result = kube_one.client.list_namespace(watch=False)
+    all_ns = [item.metadata.name for item in result.items]
+    return JsonResponse({"Namespaces": all_ns})
