@@ -44,7 +44,6 @@ kube_one = KubeCluster(configuration_yaml='C:/Users/s.ghafarian/Desktop/repo/Asa
 
 
 def get_all_pods(self):
-    # Instantiate your kubernetes class and pass in config
     result = kube_one.client.list_pod_for_all_namespaces(watch=False)
     all_pods = [item.metadata.name for item in result.items]
     return JsonResponse({"RunningPods": all_pods})
