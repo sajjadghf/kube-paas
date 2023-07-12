@@ -40,9 +40,17 @@ class KubeCluster(object):
         return client.CoreV1Api()
 
 
-def get_data_from_cluster(self):
+kube_one = KubeCluster(configuration_yaml='C:/Users/s.ghafarian/Desktop/repo/AsaPaaS/PaaS/Config/kube-config')
+
+
+def get_all_pods(self):
     # Instantiate your kubernetes class and pass in config
-    kube_one = KubeCluster(configuration_yaml='C:/Users/s.ghafarian/Desktop/repo/AsaPaaS/PaaS/Config/kube-config')
     result = kube_one.client.list_pod_for_all_namespaces(watch=False)
     all_pods = [item.metadata.name for item in result.items]
     return JsonResponse({"RunningPods": all_pods})
+
+
+def get_all_services(self):
+    result = kube_one.client.list_service_for_all_namespaces(watch=False)
+    all_services = [item.metadata.name for item in result.items]
+    return JsonResponse({"Services": all_services})

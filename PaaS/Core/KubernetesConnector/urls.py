@@ -3,5 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('GetPods/', views.get_data_from_cluster),
+    path('GetPods/', views.get_all_pods),
+    path('GetServices/', views.get_all_services),
 ]
