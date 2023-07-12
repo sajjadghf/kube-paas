@@ -162,4 +162,4 @@ cython_debug/
 PaaS/Config/kube-config
 
 
-db.sqlite3
+PassS/db.sqlite3
