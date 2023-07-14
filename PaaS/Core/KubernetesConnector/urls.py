@@ -7,5 +7,5 @@ urlpatterns = [
     path('getpodsdetailed/', views.get_all_pods_detailed),
     path('getservices/', views.get_all_services),
     path('getnodes/', views.get_all_nodes),
-    path('getgamespaces/', views.get_all_namespaces),
+    path('getnamespaces/', views.get_all_namespaces),
 ]
