@@ -3,9 +3,9 @@ from . import views
 
 
 urlpatterns = [
-    path('GetPods/', views.get_all_pods),
-    path('GetPodsDetailed/', views.get_all_pods_detailed),
-    path('GetServices/', views.get_all_services),
-    path('GetNodes/', views.get_all_nodes),
-    path('GetNamespaces/', views.get_all_namespaces),
+    path('getpods/', views.get_all_pods),
+    path('getpodsdetailed/', views.get_all_pods_detailed),
+    path('getservices/', views.get_all_services),
+    path('getnodes/', views.get_all_nodes),
+    path('getgamespaces/', views.get_all_namespaces),
 ]
