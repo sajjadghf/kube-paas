@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Deployments(models.Model):
+class Deployment(models.Model):
     dep_name = models.CharField(max_length=30)
     pod_name = models.CharField(max_length=30)
     image = models.CharField(max_length=60)
